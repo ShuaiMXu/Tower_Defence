@@ -14,6 +14,8 @@ public class Tower : MonoBehaviour
     //State of each tower
     [SerializeField] Transform targetEnemy;
 
+    public Waypoint basewWaypoint;
+
 
     // Update is called once per frame
     void Update()
