@@ -55,18 +55,15 @@ public class PathFinding : MonoBehaviour
         {
             searchCenter = queue.Dequeue();
             searchCenter.isExplored = true;
-            print(searchCenter);
             HaltIfEndFind(searchCenter);
             ExploreNeighbours();
         }
-        print("Finish path finding");
     }
 
     private void HaltIfEndFind(Waypoint searchCenter)
     {
        if(searchCenter == endWaypoint)
         {
-            print("Stopping");
             isRunning = false;
         }
     }
@@ -113,6 +110,5 @@ public class PathFinding : MonoBehaviour
                 grid.Add(gridPos, waypoint);
             }
         }
-        //print("Loaded " + grid.Count + " blocks");
     }
 }

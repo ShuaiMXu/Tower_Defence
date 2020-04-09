@@ -16,7 +16,9 @@ public class EnemySpwner : MonoBehaviour
     {
         while (true) // forever
         {
-            Instantiate(enemeyPrefab, transform.position, Quaternion.identity);
+            Vector3 EnemyPos = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
+            Instantiate(enemeyPrefab, EnemyPos, Quaternion.identity);
+
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
     }
