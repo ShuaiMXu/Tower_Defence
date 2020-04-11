@@ -100,6 +100,7 @@ MonoBehaviour:
   projectileParticale: {fileID: 3330184990564156742}
   projectileParticale1: {fileID: 4930133615087088436}
   targetEnemy: {fileID: 0}
+  basewWaypoint: {fileID: 0}
 --- !u!1001 &3240281675856771654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,8 +170,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
         type: 3}
+      propertyPath: VelocityModule.z.scalar
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
+        type: 3}
       propertyPath: CollisionModule.minKillSpeed
-      value: 1000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
         type: 3}
@@ -260,8 +266,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
         type: 3}
+      propertyPath: VelocityModule.z.scalar
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
+        type: 3}
       propertyPath: CollisionModule.minKillSpeed
-      value: 1000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 198433943929519872, guid: 1a1c02facd51d87458dcaa3a761e2c03,
         type: 3}
